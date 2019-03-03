@@ -375,57 +375,7 @@ class TreeVisualizer:
             if elem.key == key:
                 print("Potential of", str(key)+":", self.tree.nodepot_rek(elem))
 
-
-
-#                   TEST AREA
-###############################
-def show_nodes(tree):
-    nodes = tree.find_nodes()
-    for elem in nodes:
-        print("Key:", elem.key, end='')
-        if elem.left:
-            print(" l:", elem.left.key, end='')
-        else:
-            print(" l:", "N",  end='')
-        if elem.right:
-            print(" r:", elem.right.key,  end='')
-        else:
-            print(" r:", "N",  end='')
-        if elem.p:
-            print(" p:", elem.p.key)
-        else:
-            print(" p:", "N")
-"""
-
-root = Tk()
-a = TreeVisualizer(root)
-root.mainloop()
-
-
-# Svens Test Corner
-print("\nloeschen eines nicht vorh. keys")
-T.delete(420)
-print("suchen eines nicht vorh. keys")
-print(T.search(420))
-print("suchen eines vorhandenen keys")
-print(T.search(10).key)
-
-root = Tk()
-a = TreeVisualizer(root)
-root.mainloop()
-
-# delete funktion nach vl folien
-#ii) insert: 6, 9
-#   delete: 9
-
-#iii) a) insert: 2, 9, 6, 5
-#        delete: 5
-#     b) insert: 7 6 2 9 5
-#        delete : 5
-10
-
-"""
-
+# Run 
 root = Tk()
 a = TreeVisualizer(root)
 root.mainloop()
